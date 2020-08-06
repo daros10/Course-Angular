@@ -1,0 +1,17 @@
+<div class="card-group">
+  <div class="card" *ngFor="let peli of peliculas">
+    <img
+      src="https://image.tmdb.org/t/p/w300{{ peli.poster_path }}"
+      class="card-img-top"
+      alt="{{ peli.title }}"
+      (click)="imageClick(peli.id)"
+    />
+    <div class="card-body">
+      <h5 class="card-title text-center">{{ peli.title }}</h5>
+    </div>
+
+    <div class="card-footer">
+      <small class="text-muted">Vote average: {{ peli.vote_average }}</small>
+    </div>
+  </div>
+</div>

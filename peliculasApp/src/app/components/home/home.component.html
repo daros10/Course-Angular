@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1 class="display-5">Bienvenido a Movie App</h1>
+  <p class="">
+    Movie app es una plataforma que te ayudara a encontrar informacion sobre el
+    mundo del cine y los films.
+  </p>
+</div>
+
+<div class="container">
+  <h2 class="mt-5">Populares</h2>
+  <hr />
+  <app-cards-carousel [peliculas]="peliculas"></app-cards-carousel>
+
+  <h2 class="mt-5">Populares</h2>
+  <hr />
+  <div class="class">
+    <app-cards-carousel [peliculas]="populares"></app-cards-carousel>
+  </div>
+
+  <h2 class="mt-5">Mas valorados</h2>
+  <hr />
+  <div class="class">
+    <app-cards-carousel [peliculas]="estrenos"></app-cards-carousel>
+  </div>
+</div>
